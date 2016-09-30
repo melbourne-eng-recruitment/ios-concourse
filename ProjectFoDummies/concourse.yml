@@ -19,4 +19,4 @@ jobs:
             path: bash
             args:
               - "-c"
-              - "cd ProjectFoDummies && fastlane test"
+              - "bundle install && fastlane test"
