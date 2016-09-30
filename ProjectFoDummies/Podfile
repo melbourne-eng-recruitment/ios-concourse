@@ -1,0 +1,20 @@
+xcodeproj 'ProjectFoDummies.xcodeproj/'
+
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'ProjectFoDummies' do
+
+end
+
+target 'ProjectFoDummiesTests' do
+  pod 'Cedar'
+  pod 'Blindside'
+end
+
+target 'ProjectFoDummiesUITests' do
+
+end
+

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='ProjectFoDummiesUITests.xctest' tests='2' failures='0'>
+  <testsuite name='_AppSpec' tests='1' failures='0'>
+    <testcase classname='_AppSpec' name='TheAppYeah_adds_one_and_one' time='0.000'/>
+  </testsuite>
+  <testsuite name='ProjectFoDummiesUITests' tests='1' failures='0'>
+    <testcase classname='ProjectFoDummiesUITests' name='testExample' time='2.883'/>
+  </testsuite>
+</testsuites>

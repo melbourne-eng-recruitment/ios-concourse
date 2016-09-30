@@ -1,0 +1,7 @@
+# frozen_string_literal: true
+# A sample Gemfile
+source "https://rubygems.org"
+
+# gem "rails"
+gem 'cocoapods', :git => 'git@github.com:CocoaPods/CocoaPods.git', :ref => '909f1651b7076fd1459dfa67fec25ebe9a060e21'
+gem 'fastlane'
