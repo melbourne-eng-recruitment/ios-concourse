@@ -25,7 +25,7 @@ platform :ios do
   desc "Runs all the tests"
   lane :test do
     scan(
-      workspace: 'ProjectFoDummies.xcworkspace',
+      workspace: 'ProjectFoDummies.xcodeproj',
       scheme: 'ProjectFoDummies',
       device: 'iPhone 6',
       clean: true
