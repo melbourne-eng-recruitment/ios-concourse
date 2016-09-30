@@ -19,4 +19,4 @@ jobs:
             path: bash
             args:
               - "-c"
-              - "cd ios-dummy/ProjectFoDummies && bundle install && fastlane test"
+              - "cd ios-dummy/ProjectFoDummies"
