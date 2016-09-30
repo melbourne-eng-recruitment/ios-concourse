@@ -1,0 +1,22 @@
+resources:
+  - name: ios-dummy
+    type: git
+    source:
+      uri: https://github.com/tracker-common/ios-concourse.git
+      branch: master
+
+jobs:
+  - name: ios-dummy
+    plan:
+      - get: ios-dummy
+        trigger: true
+      - task: specs
+        config:
+          platform: darwin
+          inputs:
+            - name: ios-dummy
+          run:
+            path: bash
+            args:
+              - "-c"
+              - "cd ProjectFoDummies && fastlane test"
