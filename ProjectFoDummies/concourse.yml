@@ -2,7 +2,7 @@ resources:
   - name: ios-dummy
     type: git
     source:
-      uri: https://github.com/tracker-common/ios-concourse.git
+      uri: https://github.com/melbourne-eng-recruitment/ios-concourse
       branch: master
 
 jobs:
@@ -17,6 +17,7 @@ jobs:
             - name: ios-dummy
           run:
             path: bash
+            user: mark.boulton
             args:
               - "-c"
               - "cd ios-dummy/ProjectFoDummies && fastlane test"
