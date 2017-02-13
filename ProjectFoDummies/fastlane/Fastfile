@@ -27,7 +27,7 @@ platform :ios do
     scan(
       workspace: 'ProjectFoDummies.xcworkspace',
       scheme: 'ProjectFoDummies',
-      device: 'iPhone 6',
+      device: 'iPhone 7',
       clean: true
       )
   end
