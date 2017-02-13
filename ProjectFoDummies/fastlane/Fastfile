@@ -27,7 +27,7 @@ platform :ios do
     scan(
       workspace: 'ProjectFoDummies.xcworkspace',
       scheme: 'ProjectFoDummies',
-      device: 'iPhone 7 (10.2)',
+      device: 'iPhone 7 (10.2) [876E6828-005C-4245-8FEB-CC45ADA4D315]',
       clean: true
       )
   end
