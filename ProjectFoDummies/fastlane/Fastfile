@@ -45,7 +45,7 @@ platform :ios do
       workspace: 'ProjectFoDummies.xcworkspace',
       scheme: 'ProjectFoDummies',
       device: 'iPhone 7 (10.2)',
-      clean: true
+      skip_build: true
       )
   end
 
