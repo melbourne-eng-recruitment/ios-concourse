@@ -24,10 +24,11 @@ platform :ios do
 
   desc "Runs all the tests"
   lane :test do
+    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "1"
     scan(
       workspace: 'ProjectFoDummies.xcworkspace',
       scheme: 'ProjectFoDummies',
-      device: 'iPhone 7 (10.2)',
+      device: 'iPhone 7',
       clean: true
       )
   end
