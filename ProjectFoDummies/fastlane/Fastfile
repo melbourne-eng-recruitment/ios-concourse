@@ -35,7 +35,7 @@ platform :ios do
 #      workspace:'ProjectFoDummies.xcworkspace',
 #      scheme:'ProjectFoDummies'
 #    )
-    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "1"
+    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "2"
     scan(
       workspace: 'ProjectFoDummies.xcworkspace',
       scheme: 'ProjectFoDummies',
