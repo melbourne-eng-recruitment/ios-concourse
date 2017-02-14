@@ -26,13 +26,13 @@ platform :ios do
   desc "Runs all the tests"
   lane :test do
 
-    xcodebuild(
-      workspace:'ProjectFoDummies.xcworkspace',
-      scheme:'ProjectFoDummies',
-      destination: 'OS=10.2,name=iPhone 7',
-      clean: true,
-      build: true 
-    )
+#    xcodebuild(
+#      workspace:'ProjectFoDummies.xcworkspace',
+#      scheme:'ProjectFoDummies',
+#      destination: 'OS=10.2,name=iPhone 7',
+#      clean: true,
+#      build: true 
+#    )
 # GAH unit tests don't seem to work via the concourse shell...need to dig further...'
 # https://github.com/fastlane/fastlane/issues/1943
 #    xctest( 
@@ -45,7 +45,8 @@ platform :ios do
       workspace: 'ProjectFoDummies.xcworkspace',
       scheme: 'ProjectFoDummies',
       device: 'iPhone 7 (10.2)',
-      skip_build: true
+      skip_build: true,
+
       )
   end
 
