@@ -30,18 +30,19 @@ platform :ios do
       scheme:'ProjectFoDummies',
       destination: 'OS=10.2,name=iPhone 7'
     )
-    xctest( 
-      destination: "OS=10.2,name=iPhone 7",
-      workspace:'ProjectFoDummies.xcworkspace',
-      scheme:'ProjectFoDummies'
-    )
-#    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "1"
-#    scan(
-#      workspace: 'ProjectFoDummies.xcworkspace',
-#      scheme: 'ProjectFoDummies',
-#      device: 'iPhone 7 (10.2)',
-#      clean: true
-#      )
+#    xctest( 
+#      destination: "OS=10.2,name=iPhone 7",
+#      workspace:'ProjectFoDummies.xcworkspace',
+#      scheme:'ProjectFoDummies'
+#    )
+    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "1"
+    scan(
+      workspace: 'ProjectFoDummies.xcworkspace',
+      scheme: 'ProjectFoDummies',
+      device: 'iPhone 7 (10.2)',
+#      clean: true,
+      skip_build: true
+      )
   end
 
   desc "Submit a new Beta Build to Apple TestFlight"
