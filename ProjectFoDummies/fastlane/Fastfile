@@ -24,7 +24,7 @@ platform :ios do
 
   desc "Runs all the tests"
   lane :test do
-#    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "2"
+    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "1"
     scan(
       workspace: 'ProjectFoDummies.xcworkspace',
       scheme: 'ProjectFoDummies',
