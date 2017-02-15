@@ -17,6 +17,7 @@ default_platform :ios
 
 platform :ios do
   before_all do
+    sh 'xcrun instruments -s devices'
     sh 'open -b com.apple.iphonesimulator'
     sh 'sleep 5'
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
