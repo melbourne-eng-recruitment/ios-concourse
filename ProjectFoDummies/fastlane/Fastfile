@@ -17,7 +17,8 @@ default_platform :ios
 
 platform :ios do
   before_all do
-    #sh 'open -b com.apple.iphonesimulator'
+    sh 'open -b com.apple.iphonesimulator'
+    sh 'sleep 5'
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
     # cocoapods
 
@@ -35,11 +36,11 @@ platform :ios do
     )
 # GAH unit tests don't seem to work via the concourse shell...need to dig further...'
 # https://github.com/fastlane/fastlane/issues/1943
-#    xctest( 
-#      destination: "OS=10.2,name=iPhone 7",
-#      workspace:'ProjectFoDummies.xcworkspace',
-#      scheme:'ProjectFoDummies'
-#    )
+    xctest( 
+      destination: "OS=10.2,name=iPhone 7",
+      workspace:'ProjectFoDummies.xcworkspace',
+      scheme:'ProjectFoDummies'
+    )
 #    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "2"
 #    scan(
 #      workspace: 'ProjectFoDummies.xcworkspace',
