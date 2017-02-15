@@ -33,16 +33,23 @@ platform :ios do
       scheme:'ProjectFoDummies',
       destination: 'OS=10.2,name=iPhone SE',
       clean: true,
-      build: true 
+      xcargs: 'build-for-testing' 
+    )
+
+    xcodebuild(
+        workspace: 'ProjectFoDummies.xcworkspace',
+        scheme: 'ProjectFoDummies',
+        destination: 'OS=10.2,name=iPhone SE',
+        xcargs: 'test-without-building'
     )
 # GAH unit tests don't seem to work via the concourse shell...need to dig further...'
 # https://github.com/fastlane/fastlane/issues/1943
-    xctest( 
-      destination: "OS=10.2,name=iPhone SE",
-      workspace:'ProjectFoDummies.xcworkspace',
-      scheme:'ProjectFoDummies',
-      skip_build: true
-    )
+#    xctest( 
+#      destination: "OS=10.2,name=iPhone SE",
+#      workspace:'ProjectFoDummies.xcworkspace',
+#      scheme:'ProjectFoDummies',
+#      skip_build: true
+#    )
 #    ENV["FASTLANE_EXPLICIT_OPEN_SIMULATOR"] = "2"
 #    scan(
 #      workspace: 'ProjectFoDummies.xcworkspace',
